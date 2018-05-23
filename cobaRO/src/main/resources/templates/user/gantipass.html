@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="tampil/head">
+</head>
+<body>
+	<div class="containerku">
+			<div th:replace="tampil/menu">&nbsp;</div>
+		<div class="bagteng">
+			<div th:replace="tampil/header">&nbsp;</div>
+			<div class="baru">
+				<hr>
+				<ol class="breadcrumb">
+					<li><a href="#">Nilai</a></li>
+					<li class="active"><a href="#">Kemajuan</a></li>
+				</ol>
+			</div>
+			<div id="tabs">
+				<div class="form-group">
+					<label for="recipient-name" class="control-label">Password Lama</label>
+					<input type="password" class="form-control" id="recipient-name">
+					<div class="form-group">
+					<label for="recipient-name" class="control-label">Password Baru</label>
+					<input type="password" class="form-control" id="recipient-name">
+					</div>
+				</div>
+				<ol class="breadcrumb">
+						<center>
+							<button type="button" class="btn btn-primary">Simpan</button>
+							<button type="button" class="btn btn-warning">Batal</button>
+						</center>
+					</ol>
+
+			</div>
+		</div>
+		<div th:replace="tampil/bagkan">&nbsp;</div>
+</div>
+	<div th:replace="tampil/footer">&nbsp;</div>
+</body>
+<script src="jquery-ui/external/jquery/jquery.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript">
+
+	$( "#tabs" ).tabs();
+</script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</html>
