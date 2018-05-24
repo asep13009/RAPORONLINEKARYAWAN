@@ -9,15 +9,47 @@
 			<div th:replace="tampil/header">&nbsp;</div>
 			<div class="baru">
 				<hr>
-				<ol class="breadcrumb">
-					<li><a href="#">Nilai</a></li>
-					<li class="active"><a href="#">Kemajuan</a></li>
-				</ol>
+				<center><b>Data Nilai Karyawan</b></center><br>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a class="thumbnail" href="#">
+					<img class="image-responsive img-circle" c src="images/user/user1.jpg" alt="Foto Karyawan">
+				</a>
 			</div>
-			
 
 			<div class="table-responsive ">
-				<table class="table">
+				<table class="table " >
+					<tr>
+						<td>NIK</td>
+						<td>:</td>
+						<td>1281712819887</td>
+					</tr>
+					<tr>
+						<td>Nama</td>
+						<td>:</td>
+						<td>Maryam Sukma Puji Astuti</td>
+					</tr>
+					<tr>
+						<td>Posisi</td>
+						<td>:</td>
+						<td>Programer</td>
+					</tr>
+					<tr>
+						<td>Departemen</td>
+						<td>:</td>
+						<td>HR</td>
+					</tr>
+					<tr>
+						<td>Keteranngan</td>
+						<td>:</td>
+						<td>Kompeten</td>
+					</tr>
+				</table>
+			</div>
+			<ol class=" ">
+			<a href="#" class="btn btn-success btn-lg" onclick="cetak()" >
+					<span class="glyphicon glyphicon-print"></span> Print</a><br>
+				</ol>
+				<table class="table ">
 					<tr>
 						<th rowspan="2"><center>Aspek Penilaian</center></th>
 						<th colspan="2"><center>Nilai</center></th>
@@ -72,34 +104,7 @@
 						<td>90</td>
 						
 					</tr>
-					<tr>
-						<td scope="row">Subaspek 7</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 8</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 9</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 10</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
+					
 
 					<tr>
 						<th scope="row" colspan="5"><i>Aspek 2</i></th>
@@ -139,61 +144,28 @@
 						<td>90</td>
 						
 					</tr>
-					<tr>
-						<td scope="row">Subaspek 6</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 7</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 8</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 9</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
-					<tr>
-						<td scope="row">Subaspek 10</td>
-						<td>80</td>
-						<td>90</td>
-						<td>90</td>
-						
-					</tr>
+				
 					<tr>
 						<td >&nbsp</td>
 						<td>&nbsp</td>
 						<td><b>Total :</b></td>
 						<td><b>187 </b> </td>
-						
 					</tr>
+
 				</table>
 			</div>
-			<ol class="breadcrumb">
-				<a href="#" class="btn btn-success btn-lg">
-					<span class="glyphicon glyphicon-print"></span> Print 
-				</a>
-			</ol>
+				 
+			
 		</div>
 		
 		<div th:replace="tampil/bagkan">&nbsp;</div>
 </div>
 	<div th:replace="tampil/footer">&nbsp;</div>
 </body>
+<script type="">
+	function cetak(){
+	  window.print(); }
+</script>
 <script src="jquery-ui/external/jquery/jquery.js"></script>
 <script src="jquery-ui/jquery-ui.js"></script>
 <script type="text/javascript">
